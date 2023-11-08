@@ -1,6 +1,8 @@
 
 window.addEventListener("load", () => {
-    pageload()
+    setTimeout(()=>{
+        pageload()
+    },500)
 })
 
 // The pageload function sets initial content in the 'temp-data' element
@@ -25,6 +27,7 @@ let searchBtn = document.getElementById("search-btn")
 let mainBox = document.getElementById("temp-data")
 
 
+
 const getWeather = (cityname) => {
 
     document.getElementById("cityName").innerText = `for location : ${cityname}`
@@ -41,6 +44,7 @@ const getWeather = (cityname) => {
             console.log(sunrisetime)
 
             temp += `<div class="all-weather-data">
+                        <p class="spinner-border" role="status" id="spinner-preload"></p>
                         <p> <i class="bi bi-thermometer"></i> Temperature is <b> ${details.temp}<span>&#8451;</span></b>  </p>
                         <p> <i class="bi bi-thermometer-snow"></i> Minimum Temperature is <b> ${details.min_temp}<span>&#8451;</span> </b> </p>
                         <p> <i class="bi bi-thermometer-sun"></i> Maximum Temperature is <b>${details.max_temp}<span>&#8451;</span></b> </p>
@@ -52,15 +56,23 @@ const getWeather = (cityname) => {
                         <p> <i class="bi bi-wind"></i> Wind Speed is <b>${details.wind_speed} <span>km/hr</span></b> </p>
                     </div>`
             mainBox.innerHTML = temp
-            document.getElementById("searchText").value=""
+            document.getElementById("searchText").value = ""
+
+            let preloader = document.getElementById("spinner-preload")
+
+            setTimeout(()=>{
+                preloader.style.display="none"
+            },500)
         })
 }
+
+
 
 // Event listener for the search button to trigger the getWeather function
 searchBtn.addEventListener("click", (e) => {
     e.preventDefault()
     let cityname = searchData.value
-    getWeather(cityname)
+    getWeather(cityname)    
 })
 
 
