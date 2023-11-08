@@ -13,6 +13,6 @@
   <li><b>Clean and Simple Interface:</b> <p>WeCast offers an easy-to-navigate and visually pleasing interface, making it straightforward for users to find the weather data they need.</p></li>
 </ul>
 
-<h4> Getting Started : <a href="https://rvp6696.github.io/weatherapp/" title="WeCast" target="_blank"> Click here to check the weather now </a> </h4>
+<h4> Getting Started : <a href="https://rvp6696.github.io/weatherapp/" title="WeCast" target="_new"> Click here to check the weather now </a> </h4>
 
 <p>We hope it helps you stay informed about the weather in your favorite cities!</p>
