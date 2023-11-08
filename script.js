@@ -52,6 +52,7 @@ const getWeather = (cityname) => {
                         <p> <i class="bi bi-wind"></i> Wind Speed is <b>${details.wind_speed} <span>km/hr</span></b> </p>
                     </div>`
             mainBox.innerHTML = temp
+            document.getElementById("searchText").value=""
         })
 }
 
