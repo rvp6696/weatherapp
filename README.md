@@ -1,7 +1,7 @@
 <h1> WeCast : Weather Application </h1>
 
 <p>
-  WeCast, a simple and user-friendly weather web application that provides you with real-time weather information for various cities. With WeCast, you can easily check the current weather conditions and forecast for your desired location. Whether you are planning a trip or just curious about the weather in different cities, WeCast has got you covered.
+WeCast, a simple and user-friendly weather web application that provides you with real-time weather information for various cities. With WeCast, you can easily check the current weather conditions for your desired location. Whether you are planning a trip or just curious about the weather in different cities, WeCast has got you covered.
 </p>
 
 <h3> Features: </h3>
